@@ -1,0 +1,78 @@
+﻿body {
+    margin: 0 auto;
+    background-image: url("img/bg-dx.jpg");
+}
+
+.loginButton {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #ffffff;
+    min-width: 54px;
+    height: 24px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: 0 none;
+    padding: 0 10px 2px;
+    text-align: center;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid #4980C1;
+    background: -moz-linear-gradient(top, #5384BE, #4386D7);
+}
+
+    .loginButton:hover {
+        cursor: pointer;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #85B6F0', endColorstr='#579AEB'); /* for IE */
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #85B6F0', endColorstr='#579AEB'); /* for IE 8 and above */
+        background: -webkit-gradient(linear, left top, left bottom, from(#85B6F0), to(#579AEB)); /* for webkit browsers */
+    }
+
+.wrapper {
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(52,73, 94,0.7);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+input {
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.btnlogin {
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    background-color: #2ECC71;
+}
+
+.btnRegister {
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    background-color: #2ECC71;
+}
+
+a {
+    color: #fff;
+}
+
+.label {
+    display: inline-block;
+    float: right;
+    width: 70%;
+    background-color: aqua;
+    width: 100%;
+}

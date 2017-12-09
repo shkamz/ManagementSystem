@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="leaveModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="leavework">
+          <Key>
+            <PropertyRef Name="Leave_Id" />
+          </Key>
+          <Property Name="Leave_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Leave_Status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Leave_Date" Type="date" Nullable="false" />
+          <Property Name="Leave_EndDate" Type="date" Nullable="false" />
+          <Property Name="Leave_Desc" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Emp_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Leave_Type" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="leaveModelStoreContainer">
+          <EntitySet Name="leavework" EntityType="Self.leavework" Schema="fyp" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="leaveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="leavework">
+          <Key>
+            <PropertyRef Name="Leave_Id" />
+          </Key>
+          <Property Name="Leave_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Leave_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Leave_Date" Type="DateTime" Nullable="false" />
+          <Property Name="Leave_EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="Leave_Desc" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Emp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Leave_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="LeaveEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="leaveworks" EntityType="Self.leavework" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="leaveModelStoreContainer" CdmEntityContainer="LeaveEntities">
+          <EntitySetMapping Name="leaveworks">
+            <EntityTypeMapping TypeName="leaveModel.leavework">
+              <MappingFragment StoreEntitySet="leavework">
+                <ScalarProperty Name="Leave_Id" ColumnName="Leave_Id" />
+                <ScalarProperty Name="Leave_Status" ColumnName="Leave_Status" />
+                <ScalarProperty Name="Leave_Date" ColumnName="Leave_Date" />
+                <ScalarProperty Name="Leave_EndDate" ColumnName="Leave_EndDate" />
+                <ScalarProperty Name="Leave_Desc" ColumnName="Leave_Desc" />
+                <ScalarProperty Name="Emp_name" ColumnName="Emp_name" />
+                <ScalarProperty Name="Leave_Type" ColumnName="Leave_Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="c78fa04da6ab4402ad78d980669c7423" Name="Diagram1">
+        <EntityTypeShape EntityType="leaveModel.leavework" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

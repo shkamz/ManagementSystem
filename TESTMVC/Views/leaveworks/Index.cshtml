@@ -1,0 +1,71 @@
+﻿@model IEnumerable<TESTMVC.Models.leavework>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Leave_Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leave_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leave_EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leave_Desc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Emp_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Leave_Type)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leave_Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leave_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leave_EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leave_Desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emp_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Leave_Type)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Leave_Id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Leave_Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Leave_Id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

@@ -1,0 +1,156 @@
+﻿body {
+}
+
+/*#centered{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    background: lightblue;
+}*/
+
+/*#top {
+    margin-top: 0%;
+    width: auto;
+    height: 20px;
+    background-color: blue;
+    /*margin-left:20%;
+    margin-right:20%;*/
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+    /*input[type=multiline] {
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }*/
+
+#top {
+    margin-left: 0%;
+    height: 6.6%;
+    background-color: #347CA4;
+    width: 15%;
+    position: absolute;
+}
+
+#menu {
+    position: absolute;
+    list-style: none;
+    margin-left: 0%;
+    background-color: #222D33;
+    width: 15%;
+    height: 1000px;
+    margin-top: 3%;
+}
+
+    #menu ul {
+        list-style: none;
+        font-family: clear 'MS Gothic';
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+        #menu li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+#topbar {
+    width: 85%;
+    background-color: #3C8DBC;
+    margin-left: 15%;
+    margin-top: 0%;
+    float: left;
+    position: absolute;
+    height: 6.6%;
+}
+
+#info {
+    margin-top: 4%;
+    position: absolute;
+    background-color: #3C8DBC;
+    margin-left: 16%;
+    width: 17%;
+    height: 80%;
+}
+
+#details {
+    margin-left: 35%;
+    margin-top: 4%;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: lightgrey;
+}
+
+
+#box {
+    margin-top: 4%;
+    position: absolute;
+    background-color: #3C8DBC;
+    margin-left: 68%;
+    width: 20%;
+    height: 80%;
+}
+
+#infotab {
+    position: relative;
+    margin-left: 31%;
+    margin-top: 3%;
+    width: 50%;
+    height: 50px;
+    background-color: darkgray;
+}
+
+#topwork {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 3.5%;
+    width: 50%;
+    height: 10%;
+    background-color: aquamarine;
+    color: blue;
+}
+
+#bar {
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 7%;
+    width: 70%;
+    height: 900px;
+    background-color: ghostwhite;
+}
+/*#info{
+    position:fixed;
+    margin-top:4%;
+    margin-left:31%;
+    width:17%;
+    height:515px;
+    background-color: aqua;
+}*/
+
+
+
+#box {
+    position: relative;
+    width: 25%;
+    height: 200px;
+    background-color: darkcyan;
+}

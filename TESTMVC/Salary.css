@@ -1,0 +1,145 @@
+﻿body {
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+    input[type=multiline] {
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+
+#top {
+    margin-left: 0%;
+    height: 6.6%;
+    background-color: #347CA4;
+    width: 15%;
+    position: absolute;
+}
+
+#menu {
+    position: absolute;
+    list-style: none;
+    margin-left: 0%;
+    background-color: #222D33;
+    width: 15%;
+    height: 1000px;
+    margin-top: 3%;
+}
+
+    #menu ul {
+        list-style: none;
+        font-family: clear 'MS Gothic';
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+        #menu li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+#topbar {
+    width: 85%;
+    background-color: #3C8DBC;
+    margin-left: 15%;
+    margin-top: 0%;
+    float: left;
+    position: absolute;
+    height: 6.6%;
+}
+
+#info {
+    margin-top: 4%;
+    position: absolute;
+    background-color: #3C8DBC;
+    margin-left: 16%;
+    width: 17%;
+    height: 80%;
+}
+
+#details {
+    margin-left: 35%;
+    margin-top: 4%;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: lightgrey;
+}
+
+
+#box {
+    margin-top: 4%;
+    position: absolute;
+    background-color: #3C8DBC;
+    margin-left: 68%;
+    width: 20%;
+    height: 80%;
+}
+
+.grid th {
+    padding: 4px 2px;
+    color: #fff;
+    background: #424242;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
+
+.grid td {
+    padding: 2px;
+    border: solid 1px #c1c1c1;
+    color: #717171;
+}
+
+.grid {
+    width: 100%;
+    /*this will be the color of the odd row*/
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+
+#content {
+    margin-top: 3.5%;
+    position: absolute;
+    background-color: ghostwhite;
+    margin-left: 16%;
+    width: 70%;
+    height: 100%;
+    
+}
+
+#view {
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 18%;
+    width: 80%;
+    height: 100%;
+    background-color: aqua;
+}
+
+#boxname {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 4%;
+    width: 25%;
+    height: 10%;
+    background-color: dimgrey;
+    color: white;
+    text-align: center;
+}
